@@ -1,25 +1,23 @@
-# DeepDetect-AI
-A deep learning-based computer vision project for classifying images as real or AI-generated using TensorFlow and EfficientNetB0.
+<div align="center">
 
+# 🔍 DeepDetect AI
 
-# DeepDetect AI — Real vs AI-Generated Image Detection
+### Real vs AI-Generated Image Detection
 
-A Computer Vision project that uses deep learning to classify images as real or AI-generated.
+*A Computer Vision project powered by Deep Learning.*
 
-## Overview
+<br>
 
-DeepDetect explores image authenticity classification using TensorFlow/Keras and the EfficientNetB0 architecture. The project includes a model-training workflow in Google Colab and a web application for image uploads and prediction.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-6C63FF?style=for-the-badge)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 
-## Technologies
+<br>
 
-- Python
-- TensorFlow and Keras
-- EfficientNetB0
-- NumPy
-- Pillow
-- FastAPI
-- HTML, CSS, and JavaScript
+**Detect. Analyze. Explore.**
 
-## Project Goal
+---
 
-To build an accessible image-classification system that predicts whether an uploaded image belongs to the real-image or AI-generated-image class.
+</div>
