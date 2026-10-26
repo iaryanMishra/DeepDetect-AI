@@ -1,11 +1,13 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=240&color=0:050816,35:102A56,70:174EA6,100:00D4FF&text=DeepDetect%20AI&fontSize=68&fontColor=FFFFFF&fontAlignY=42&desc=INTELLIGENT%20IMAGE%20AUTHENTICITY%20CLASSIFICATION&descSize=15&descAlignY=65&animation=fadeIn" alt="DeepDetect AI"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=250&color=0:0B1026,50:123B72,100:00C9FF&text=DeepDetect%20AI&fontSize=65&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=REAL%20VS%20AI-GENERATED%20IMAGE%20DETECTION&descSize=16&descAlignY=60&stroke=00C9FF&strokeWidth=1" width="100%" alt="DeepDetect AI banner"/>
 
 <br/>
 
+### 🔍 Exploring Image Authenticity Through Deep Learning
+
 <p>
-  <img src="https://img.shields.io/badge/DOMAIN-COMPUTER%20VISION-00D4FF?style=for-the-badge&logo=opencv&logoColor=white" alt="Computer Vision"/>
+  <img src="https://img.shields.io/badge/DOMAIN-COMPUTER%20VISION-00C9FF?style=for-the-badge&logo=opencv&logoColor=white" alt="Computer Vision"/>
   <img src="https://img.shields.io/badge/AI-DEEP%20LEARNING-8B5CF6?style=for-the-badge" alt="Deep Learning"/>
   <img src="https://img.shields.io/badge/MODEL-EFFICIENTNETB0-2563EB?style=for-the-badge" alt="EfficientNetB0"/>
 </p>
@@ -24,41 +26,93 @@
 
 <br/>
 
-<a href="#-overview"><strong>Explore Project</strong></a>
-&nbsp; ◆ &nbsp;
-<a href="#-model-pipeline"><strong>Model Pipeline</strong></a>
-&nbsp; ◆ &nbsp;
-<a href="#-technology-stack"><strong>Technology Stack</strong></a>
+<a href="#-overview">
+  <img src="https://img.shields.io/badge/Explore%20Project-00C9FF?style=for-the-badge&logo=github&logoColor=white" alt="Explore Project"/>
+</a>
+<a href="#-model-architecture">
+  <img src="https://img.shields.io/badge/Model%20Architecture-123B72?style=for-the-badge&logo=codefactor&logoColor=white" alt="Model Architecture"/>
+</a>
+<a href="#-technology-stack">
+  <img src="https://img.shields.io/badge/Technology%20Stack-7B61FF?style=for-the-badge&logo=stackshare&logoColor=white" alt="Technology Stack"/>
+</a>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/STATUS-EXPERIMENTAL-0EA5E9?style=flat-square" alt="Experimental project status"/>
-<img src="https://img.shields.io/badge/FOCUS-IMAGE%20CLASSIFICATION-7C3AED?style=flat-square" alt="Image classification focus"/>
+<img src="https://img.shields.io/badge/STATUS-EXPERIMENTAL-0EA5E9?style=flat-square" alt="Experimental status"/>
+<img src="https://img.shields.io/badge/FOCUS-IMAGE%20CLASSIFICATION-7C3AED?style=flat-square" alt="Image classification"/>
 
-</div>
+<br/>
 
 ---
 
-## 🧭 Overview
+</div>
 
-**DeepDetect AI** explores the application of deep learning to image authenticity classification.
+## 📑 Table of Contents
 
-The project uses a TensorFlow/Keras model based on **EfficientNetB0** to classify images into two categories:
+- [🌌 Overview](#-overview)
+- [🎯 Problem Statement](#-problem-statement)
+- [✨ Project Objectives](#-project-objectives)
+- [🚀 Key Features](#-key-features)
+- [🧠 Model Architecture](#-model-architecture)
+- [🔬 Image Preprocessing](#-image-preprocessing)
+- [🔄 System Architecture](#-system-architecture)
+- [🛠️ Technology Stack](#️-technology-stack)
+- [📂 Repository Structure](#-repository-structure)
+- [⚙️ Getting Started](#️-getting-started)
+- [📊 Evaluation](#-evaluation)
+- [⚠️ Limitations](#️-limitations)
+- [🔮 Future Improvements](#-future-improvements)
+- [👨‍💻 About the Developer](#-about-the-developer)
+- [📜 Disclaimer](#-disclaimer)
 
-| Class | Description |
-|:---|:---|
-| 🟢 **Real** | Image classified into the real-image class |
-| 🟣 **AI-Generated** | Image classified into the AI-generated-image class |
+---
 
-The model-training workflow is developed in Google Colab. The broader application integrates image preprocessing, model inference, a FastAPI backend, and a web interface for image uploads and prediction display.
+## 🌌 Overview
 
-> **Core idea:** Connect deep learning experimentation with a practical image-classification application.
+**DeepDetect AI** is a Computer Vision project that explores the classification of images into two categories:
+
+- 🟢 **Real Image**
+- 🟣 **AI-Generated Image**
+
+The project uses a deep learning model built with **TensorFlow/Keras** and the **EfficientNetB0** architecture.
+
+The training workflow is developed in Google Colab. The broader application also integrates a FastAPI backend and a web interface through which users can upload images and view prediction results.
+
+### Project at a Glance
 
 <div align="center">
 
-| 🧠 Deep Learning | 🖼️ Computer Vision | 🌐 Application Integration |
-|:---:|:---:|:---:|
-| EfficientNetB0 | Image preprocessing | FastAPI and web UI |
+<table>
+<tr>
+<td align="center" width="33%">
+
+### 🧠
+
+**Deep Learning**
+
+EfficientNetB0
+
+</td>
+<td align="center" width="33%">
+
+### 🖼️
+
+**Computer Vision**
+
+Image Classification
+
+</td>
+<td align="center" width="33%">
+
+### 🌐
+
+**Application**
+
+Web-Based Predictions
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -66,41 +120,47 @@ The model-training workflow is developed in Google Colab. The broader applicatio
 
 ## 🎯 Problem Statement
 
-The growing quality of AI-generated imagery makes visual distinctions between generated and authentic photographs increasingly difficult.
+AI-generated images are becoming increasingly realistic, making it difficult to distinguish generated imagery from real photographs through visual inspection alone.
 
-DeepDetect approaches this challenge as a binary classification task: process an input image and predict which of the two training classes it most closely matches.
+DeepDetect approaches this challenge as a **binary image-classification problem**.
 
-### Project Objectives
+Given an input image, the model processes its visual information and predicts which of the two classes it most closely matches.
 
-- 🧠 Develop an image classifier using TensorFlow/Keras.
-- 🔬 Explore EfficientNetB0 for visual feature extraction and classification.
-- 🖼️ Establish a consistent image preprocessing pipeline.
-- ⚙️ Connect the trained model to a prediction API.
-- 🌐 Provide a web interface for submitting images and viewing predictions.
-- 📊 Evaluate model performance using appropriate classification metrics.
+> **Project goal:** Explore deep learning techniques for image classification and integrate the trained model into an accessible application.
 
 ---
 
-## ✨ System Highlights
+## ✨ Project Objectives
+
+- 🧠 Develop an image-classification workflow using TensorFlow/Keras.
+- 🔬 Explore EfficientNetB0 for visual feature extraction and classification.
+- 🖼️ Apply consistent image preprocessing before model inference.
+- ⚙️ Integrate prediction functionality through a FastAPI backend.
+- 🌐 Provide a browser-based interface for image uploads and predictions.
+- 📊 Evaluate the model using appropriate classification metrics.
+
+---
+
+## 🚀 Key Features
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 Model Development
+### 🧠 Deep Learning
 
-A deep learning workflow based on EfficientNetB0 and TensorFlow/Keras.
+Uses TensorFlow/Keras with the EfficientNetB0 architecture.
 
-**Focus:** Image classification and model experimentation.
+**Focus:** Image classification and model development.
 
 </td>
 <td width="50%" valign="top">
 
-### 🔍 Image Preprocessing
+### 🖼️ Image Processing
 
-Standardized input preparation before inference.
+Prepares input images through RGB conversion, resizing, and pixel scaling.
 
-**Focus:** RGB conversion, image resizing, and pixel scaling.
+**Focus:** Consistent input preprocessing.
 
 </td>
 </tr>
@@ -109,18 +169,18 @@ Standardized input preparation before inference.
 
 ### ⚡ Prediction Backend
 
-A FastAPI application that exposes image-prediction functionality.
+Uses FastAPI to expose image-prediction functionality.
 
-**Focus:** Receiving images and returning prediction results.
+**Focus:** Receiving images and returning predictions.
 
 </td>
 <td width="50%" valign="top">
 
-### 🖥️ Web Interface
+### 🌐 Web Interface
 
-A frontend for image uploads, image previews, and prediction display.
+Provides a user interface for image uploads, previews, and prediction display.
 
-**Focus:** Making model inference accessible through a browser.
+**Focus:** Accessible model interaction.
 
 </td>
 </tr>
@@ -134,61 +194,68 @@ A frontend for image uploads, image previews, and prediction display.
 
 DeepDetect uses **EfficientNetB0**, a convolutional neural network architecture, within a TensorFlow/Keras classification workflow.
 
-The project uses a pretrained EfficientNetB0 model. Details such as the final classification head, fine-tuning configuration, optimizer, and training schedule should be taken from the actual training notebook.
+The project uses a pretrained EfficientNetB0 model. The exact classification head, optimizer, training schedule, and fine-tuning configuration should be confirmed from the training notebook.
 
-### Model Pipeline
+### Model Workflow
 
 <div align="center">
 
 ```text
-                 INPUT IMAGE
-                      │
-                      ▼
-            ┌──────────────────┐
-            │  Image Loading   │
-            └────────┬─────────┘
-                     ▼
-            ┌──────────────────┐
-            │  RGB Conversion  │
-            └────────┬─────────┘
-                     ▼
-            ┌──────────────────┐
-            │ Resize: 224×224  │
-            └────────┬─────────┘
-                     ▼
-            ┌──────────────────┐
-            │ Pixel Scaling /255│
-            └────────┬─────────┘
-                     ▼
-            ┌──────────────────┐
-            │  EfficientNetB0  │
-            │   Classification │
-            └────────┬─────────┘
-                     ▼
-            ┌──────────────────┐
-            │ Predicted Class  │
-            └──────────────────┘
+              ┌───────────────────┐
+              │    Input Image    │
+              └─────────┬─────────┘
+                        ▼
+              ┌───────────────────┐
+              │ Image Preprocessing│
+              └─────────┬─────────┘
+                        ▼
+              ┌───────────────────┐
+              │   EfficientNetB0  │
+              │  Deep Learning    │
+              └─────────┬─────────┘
+                        ▼
+              ┌───────────────────┐
+              │ Model Prediction  │
+              └─────────┬─────────┘
+                        ▼
+               ┌────────┴────────┐
+               ▼                 ▼
+        ┌─────────────┐   ┌─────────────┐
+        │    Real     │   │ AI-Generated│
+        └─────────────┘   └─────────────┘
 ```
 
 </div>
 
-### Input Specifications
+---
 
-| Parameter | Value |
-|:---|:---|
-| Image color format | RGB |
-| Input dimensions | 224 × 224 pixels |
-| Input representation | Batched numerical array |
-| Pixel scaling | Divide pixel values by 255 |
-| Model framework | TensorFlow/Keras |
-| Architecture | EfficientNetB0 |
-| Task | Binary image classification |
+## 🔬 Image Preprocessing
+
+The prediction pipeline prepares uploaded images before passing them to the model.
+
+| Step | Operation | Purpose |
+|:---:|---|---|
+| 01 | Image loading | Read the input image |
+| 02 | RGB conversion | Standardize the image color format |
+| 03 | Image resizing | Resize to 224 × 224 pixels |
+| 04 | Pixel scaling | Divide pixel values by 255 |
+| 05 | Batch preparation | Add the required batch dimension |
+| 06 | Model inference | Generate the model output |
+| 07 | Result interpretation | Determine the predicted class |
+
+**Input specifications**
+
+- **Color format:** RGB
+- **Image dimensions:** 224 × 224 pixels
+- **Pixel scaling:** Division by 255
+- **Framework:** TensorFlow/Keras
+- **Architecture:** EfficientNetB0
 
 ---
 
-## 🔄 End-to-End System Architecture
+## 🔄 System Architecture
 
-The overall system connects model training to application-based inference.
+The overall project connects model training to application-based inference.
 
 ```mermaid
 flowchart TD
@@ -197,28 +264,32 @@ flowchart TD
     C --> D["Model Training"]
     D --> E["Saved Model"]
 
-    U["🖥️ User"] --> F["Web Interface"]
+    U["👤 User"] --> F["Web Interface"]
     F --> G["Image Upload"]
-    G --> H["FastAPI Endpoint"]
-    E --> I["Model Loader"]
-    H --> J["Image Preprocessing"]
+    G --> H["FastAPI Backend"]
+    H --> I["Image Preprocessing"]
+    E --> J["Model Loader"]
     I --> K["Model Inference"]
     J --> K
     K --> L["Predicted Class"]
     L --> F
 
-    style A fill:#101D35,color:#FFFFFF,stroke:#00D4FF
-    style C fill:#142B50,color:#FFFFFF,stroke:#00D4FF
-    style E fill:#142B50,color:#FFFFFF,stroke:#00D4FF
-    style F fill:#142B50,color:#FFFFFF,stroke:#8B5CF6
-    style H fill:#142B50,color:#FFFFFF,stroke:#00D4FF
-    style K fill:#142B50,color:#FFFFFF,stroke:#8B5CF6
-    style L fill:#101D35,color:#FFFFFF,stroke:#00D4FF
+    style A fill:#0B1026,color:#FFFFFF,stroke:#00C9FF
+    style C fill:#123B72,color:#FFFFFF,stroke:#00C9FF
+    style E fill:#123B72,color:#FFFFFF,stroke:#00C9FF
+    style F fill:#123B72,color:#FFFFFF,stroke:#8B5CF6
+    style H fill:#123B72,color:#FFFFFF,stroke:#00C9FF
+    style K fill:#123B72,color:#FFFFFF,stroke:#8B5CF6
+    style L fill:#0B1026,color:#FFFFFF,stroke:#00C9FF
 ```
 
-**Training phase:** Prepare the dataset, train or fine-tune the model, and save the selected model.
+### Training Phase
 
-**Inference phase:** Receive an uploaded image, preprocess it, perform inference, and return the prediction to the interface.
+The model-training workflow prepares the dataset, trains or fine-tunes the model, and saves the selected checkpoint.
+
+### Inference Phase
+
+The application receives an image, preprocesses it, runs model inference, and returns the predicted class to the interface.
 
 ---
 
@@ -226,19 +297,19 @@ flowchart TD
 
 <div align="center">
 
-| Technology | Application |
+| Technology | Purpose |
 |:---|:---|
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Core programming language |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Programming language |
 | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) | Deep learning framework |
 | ![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white) | Model development |
 | EfficientNetB0 | CNN architecture |
-| ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) | Array operations |
+| ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) | Numerical operations |
 | Pillow | Image loading and preprocessing |
 | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) | Prediction API |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Web structure |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Web page structure |
 | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Interface styling |
 | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Frontend interaction |
-| ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white) | Model training environment |
+| ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white) | Model development and training |
 
 </div>
 
@@ -246,7 +317,7 @@ flowchart TD
 
 ## 📂 Repository Structure
 
-The repository currently includes the training notebook.
+The repository currently contains the model-training notebook.
 
 ```text
 DeepDetect-AI/
@@ -257,24 +328,24 @@ DeepDetect-AI/
     └── DeepDetect_Training.ipynb
 ```
 
-The notebook is the entry point for exploring the model-training workflow.
+The notebook provides the starting point for exploring the training workflow.
 
-As additional files are added, this section can be updated to document the actual backend, frontend, configuration files, and model artifacts included in the repository.
+As the repository evolves, this section can be updated to reflect additional source files, configuration files, and other project artifacts actually committed to GitHub.
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
+
+Replace `YOUR_GITHUB_USERNAME` with your GitHub username.
 
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/DeepDetect-AI.git
 cd DeepDetect-AI
 ```
 
-Replace `YOUR_GITHUB_USERNAME` with your GitHub username.
-
-### 2. Open the notebook
+### 2. Open the Training Notebook
 
 Navigate to:
 
@@ -282,64 +353,63 @@ Navigate to:
 notebooks/DeepDetect_Training.ipynb
 ```
 
-Open it on GitHub to review the code or import it into Google Colab for execution.
+You can inspect the notebook directly on GitHub or import it into Google Colab.
 
-### 3. Configure the environment
+### 3. Configure the Environment
 
 Before running the notebook:
 
 1. Select an appropriate Colab runtime.
 2. Configure access to the dataset.
-3. Provide credentials through a secure method if required.
-4. Install any dependencies missing from the selected runtime.
-5. Run the notebook cells in order.
+3. Store credentials securely if required.
+4. Install any dependencies that are not already available.
+5. Execute the notebook cells in the intended order.
 
-**Reproducibility note:** Exact dependency versions and dataset configuration should be documented from the actual notebook to ensure that another user can reproduce the experiment.
+**Note:** Exact dependency versions, dataset configuration, and execution instructions should be verified from the notebook to support reproducibility.
 
 ---
 
-## 📊 Model Evaluation
+## 📊 Evaluation
 
 Model quality should be assessed using a held-out test dataset and appropriate classification metrics.
 
-| Metric | What it measures |
-|:---|:---|
+| Metric | Description |
+|---|---|
 | Accuracy | Overall proportion of correct predictions |
 | Precision | Reliability of positive-class predictions |
-| Recall | Proportion of positive examples correctly identified |
+| Recall | Proportion of actual positive examples correctly identified |
 | F1-score | Balance between precision and recall |
-| Confusion matrix | Correct and incorrect predictions by class |
+| Confusion matrix | Distribution of correct and incorrect predictions |
 
-Evaluation results should be reported for the specific model checkpoint and test dataset used.
-
-No final accuracy or performance guarantee is claimed in this README without a verified final evaluation.
+Final metrics should be reported only after confirming the results for the specific model checkpoint and test dataset being published.
 
 ---
 
-## ⚠️ Limitations and Responsible Use
+## ⚠️ Limitations
 
-- Model performance depends on the diversity and quality of training data.
+- Performance depends on the quality and diversity of the training dataset.
 - Unseen image-generation methods may produce unfamiliar patterns.
-- Resizing and preprocessing may discard useful image information.
-- A model's confidence score, if displayed, should not automatically be interpreted as a calibrated probability.
-- A classification result does not establish an image's provenance or provide definitive forensic proof.
+- Image transformations can affect classification results.
+- Model confidence scores are not necessarily calibrated probabilities.
+- A prediction does not establish an image's provenance or provide definitive forensic proof.
 
-DeepDetect is an experimental image-classification project, not a guaranteed authenticity-verification system.
+DeepDetect is an experimental image-classification system, not a guaranteed image-authenticity verification tool.
 
 ---
 
-## 🔮 Future Research Directions
+## 🔮 Future Improvements
 
-Potential improvements include:
+Potential directions for further development include:
 
-- **Generalization:** Evaluate performance on diverse, previously unseen datasets.
-- **Evaluation:** Publish class-wise precision, recall, F1-score, and confusion matrices.
-- **Robustness:** Investigate how compression, resizing, and other transformations affect predictions.
-- **Efficiency:** Measure inference time and computational requirements.
-- **Interpretability:** Explore techniques for investigating the visual patterns used by the classifier.
-- **Reproducibility:** Document the dataset, preprocessing, training configuration, and selected checkpoint.
+- 📊 Publishing verified evaluation metrics and visualizations.
+- 🧪 Testing generalization on diverse, unseen datasets.
+- ⚖️ Evaluating class-wise precision, recall, and F1-score.
+- 🔬 Investigating robustness to image compression and transformations.
+- ⚡ Measuring inference speed and computational requirements.
+- 🧠 Exploring model interpretability techniques.
+- 📖 Documenting training configurations for reproducibility.
 
-These are proposed directions for future development, not claims of existing functionality.
+These are proposed future directions, not claims of existing functionality.
 
 ---
 
@@ -347,13 +417,15 @@ These are proposed directions for future development, not claims of existing fun
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Developer-Aryan%20Mishra-0B1026?style=for-the-badge" alt="Developer: Aryan Mishra"/>
+<img src="https://img.shields.io/badge/DEVELOPER-Aryan%20Mishra-0B1026?style=for-the-badge" alt="Developer: Aryan Mishra"/>
 
 ### Aryan Mishra
 
 **B.Tech — Computer Science and Engineering**
 
 Interested in Computer Vision, Deep Learning, and Artificial Intelligence.
+
+<br/>
 
 <a href="https://github.com/YOUR_GITHUB_USERNAME">
   <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
@@ -365,22 +437,26 @@ Interested in Computer Vision, Deep Learning, and Artificial Intelligence.
 
 ## 📜 Disclaimer
 
-DeepDetect AI is developed for educational and experimental purposes.
+DeepDetect AI is an educational and experimental Computer Vision project.
 
-The model produces predictions based on learned patterns. It may incorrectly classify real or AI-generated images and should not be used as the sole basis for consequential decisions.
+The model may incorrectly classify real or AI-generated images. Its predictions should not be treated as definitive evidence of authenticity or used as the sole basis for consequential decisions.
 
 ---
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,50:174EA6,100:050816&height=140&section=footer" alt="DeepDetect footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,50:123B72,100:0B1026&height=140&section=footer" width="100%" alt="DeepDetect AI footer"/>
 
-### DeepDetect AI
+### 🔍 DeepDetect AI
 
 **Computer Vision · Deep Learning · Image Classification**
 
-*Turning experimentation into practical AI.*
+*Built with curiosity. Driven by experimentation.*
 
 <sub>Designed and developed by Aryan Mishra</sub>
+
+<br/>
+
+<a href="#-overview">⬆ Back to Overview</a>
 
 </div>
